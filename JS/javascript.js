@@ -1,1 +1,4 @@
-console.log("sadfsa");
+const Car = () { };
+
+const myCar = new Car(arguments);
+
