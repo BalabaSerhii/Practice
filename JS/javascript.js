@@ -1,4 +1,22 @@
-const Car = () { };
+class StringBuilder {
+	constructor(initialValue) {
+		this.value = initialValue;
+	}
+	
+}
 
-const myCar = new Car(arguments);
 
+// Change code above this line
+const builder = new StringBuilder(".");
+
+console.log(builder.getValue()); // "."
+
+
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
