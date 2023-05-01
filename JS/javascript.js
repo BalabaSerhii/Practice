@@ -1,43 +1,12 @@
-class User {
-  email;
+//===================================================
+const message = document.querySelector("#message");
+console.log(message.value); // Default textarea message
 
-  constructor(email) {
-    this.email = email;
-  }
+//===================================================
+const activeLink = document.querySelector(".btn.active");
+console.log(activeLink.href); // https://s.codepen.io/about
 
-  get email() {
-    return this.email;
-  }
-
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
-class Admin extends User {
-  // Change code below this line
-
-  static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
-
-  constructor({ email, accessLevel }) {
-    super(email);
-    this.accessLevel = accessLevel;
-  }
-
-  // Change code above this line
-}
-
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
-
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
-
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+//===================================================
+const image = document.querySelector(".image");
+console.log(image.src); // https://placeimg.com/640/480/animals
+image.src = 'https://placeimg.com/640/480/tech';
