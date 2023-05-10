@@ -1,12 +1,36 @@
-//===================================================
-const message = document.querySelector("#message");
-console.log(message.value); // Default textarea message
 
-//===================================================
-const activeLink = document.querySelector(".btn.active");
-console.log(activeLink.href); // https://s.codepen.io/about
+const singleBtn = document.querySelector('#single');
 
-//===================================================
-const image = document.querySelector(".image");
-console.log(image.src); // https://placeimg.com/640/480/animals
-image.src = 'https://placeimg.com/640/480/tech';
+const handleClick = () => {
+	console.log('click event listener callback');
+}
+
+singleBtn.addEventListener('click', handleClick);
+
+//==============================================================
+
+
+const multyBtn = document.querySelector('#multiple');
+
+const one = () => {
+	console.log("Привет");
+};
+
+
+const two = () => {
+	console.log('qwerqwerqwer');
+
+};
+
+
+multyBtn.addEventListener('click', one);
+multyBtn.addEventListener('click', two);
+
+
+
+
+
+
+
+console.log();
+
