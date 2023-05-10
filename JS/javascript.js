@@ -1,17 +1,9 @@
-const addListenerBtn = document.querySelector('[data-action="add"]');
-const removeListenerBtm = document.querySelector('[data-action="remove"]');
-const btn = document.querySelector('#btn');
+const button = document.querySelector(".btn");
 
-const handClick = () => {
-	console.log('Это первая строчка в коде');
+const handleClick = (event) => {
+  console.log("event: ", event);
+  console.log("event type: ", event.type);
+  console.log("currentTarget: ", event.currentTarget);
 };
 
-addListenerBtn.addEventListener('click', () => {
-	btn.addEventListener('click', handClick);
-	console.log("click event listener was added to btn");
-})
-
-removeListenerBtm.addEventListener('click', () => {
-	btn.removeEventListener('click', handClick);
-	console.log("click event listener was removed from btn");
-})
+button.addEventListener("click", handleClick);
