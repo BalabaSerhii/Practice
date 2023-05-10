@@ -1,36 +1,17 @@
+const addListenerBtn = document.querySelector('[data-action="add"]');
+const removeListenerBtm = document.querySelector('[data-action="remove"]');
+const btn = document.querySelector('#btn');
 
-const singleBtn = document.querySelector('#single');
-
-const handleClick = () => {
-	console.log('click event listener callback');
-}
-
-singleBtn.addEventListener('click', handleClick);
-
-//==============================================================
-
-
-const multyBtn = document.querySelector('#multiple');
-
-const one = () => {
-	console.log("Привет");
+const handClick = () => {
+	console.log('Это первая строчка в коде');
 };
 
+addListenerBtn.addEventListener('click', () => {
+	btn.addEventListener('click', handClick);
+	console.log("click event listener was added to btn");
+})
 
-const two = () => {
-	console.log('qwerqwerqwer');
-
-};
-
-
-multyBtn.addEventListener('click', one);
-multyBtn.addEventListener('click', two);
-
-
-
-
-
-
-
-console.log();
-
+removeListenerBtm.addEventListener('click', () => {
+	btn.removeEventListener('click', handClick);
+	console.log("click event listener was removed from btn");
+})
