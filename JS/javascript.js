@@ -1,7 +1,7 @@
-const output = document.querySelector(".output");
-let scrollEvent = 0;
+const clients = ["Mango", "Poly", "Ajax"];
+clients.push("ddd")
 
-document.addEventListener("scroll", () => {
-  scrollEvent += 1;
-  output.textContent = scrollEvent;
-})
+
+for (let i = 0; i < clients.length; i += 1) {
+  console.log(clients[i])
+}
