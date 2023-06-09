@@ -1,7 +1,8 @@
-const clients = ["Mango", "Poly", "Ajax"];
-clients.push("ddd")
+const fruits = ["apple", "banana", "orange", "apple", "mango"];
 
+let index = fruits.indexOf("banana");
 
-for (let i = 0; i < clients.length; i += 1) {
-  console.log(clients[i])
-}
+const test = index + 1;
+const test1 = index - 1;
+console.log(fruits[test1]);
+console.log(fruits[test]);
