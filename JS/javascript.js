@@ -1,8 +1,10 @@
-const fruits = ["apple", "banana", "orange", "apple", "mango"];
+const scores = [1, 2, 3, 4, 5];
+const res = [31, 52, 364, 43, 52];
 
-let index = fruits.indexOf("banana");
+const test = res.concat(scores);
 
-const test = index + 1;
-const test1 = index - 1;
-console.log(fruits[test1]);
-console.log(fruits[test]);
+
+console.log(test);
+
+
+
