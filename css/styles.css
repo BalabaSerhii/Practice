@@ -17,3 +17,12 @@ body {
   color: red;
   background-color: aqua;
 }
+
+input {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px;
+  font: inherit;
+  letter-spacing: inherit;
+  height: 20px;
+}
