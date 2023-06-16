@@ -2,8 +2,10 @@ const btnEl = document.querySelector("#btn");
 const btnEl1 = document.querySelector("#btn1");
 const text = document.querySelector(".text-input");
 const body = document.querySelector("#body");
+const output = document.querySelector("#output")
 
 
+output.innerHTML = "Получилось!"; 
 
 // const book = {
 // 	title: "Nazvanie knigi",
