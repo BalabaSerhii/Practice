@@ -1,11 +1,11 @@
-const btnEl = document.querySelector("#btn");
-const btnEl1 = document.querySelector("#btn1");
-const text = document.querySelector(".text-input");
-const body = document.querySelector("#body");
-const output = document.querySelector("#output")
+// const btnEl = document.querySelector("#btn");
+// const btnEl1 = document.querySelector("#btn1");
+// const text = document.querySelector(".text-input");
+// const body = document.querySelector("#body");
+// const output = document.querySelector("#output")
 
 
-output.innerHTML = "Получилось!"; 
+// output.innerHTML = "Получилось!"; 
 
 // const book = {
 // 	title: "Nazvanie knigi",
@@ -31,22 +31,22 @@ output.innerHTML = "Получилось!";
 // };
 
 
-// ✅ Логически и синтаксически сгруппированные сущности
-const bookShelf = {
-  books: ["The Last Kingdom", "Dream Guardian"],
-  // Это метод объекта
-  getBooks() {
-    console.log("Этот метод будет возвращать все книги - свойство books");
-  },
-  // Это метод объекта
-  addBook(bookName) {
-    console.log("Этот метод будет добавлять новую книгу в свойство books");
-  },
-};
+// // ✅ Логически и синтаксически сгруппированные сущности
+// const bookShelf = {
+//   books: ["The Last Kingdom", "Dream Guardian"],
+//   // Это метод объекта
+//   getBooks() {
+//     console.log("Этот метод будет возвращать все книги - свойство books");
+//   },
+//   // Это метод объекта
+//   addBook(bookName) {
+//     console.log("Этот метод будет добавлять новую книгу в свойство books");
+//   },
+// };
 
-// Вызовы методов
-bookShelf.getBooks();
-bookShelf.addBook("Новая книга");
+// // Вызовы методов
+// bookShelf.getBooks();
+// bookShelf.addBook("Новая книга");
 
 
 // btnEl.addEventListener("click", () =>
@@ -58,10 +58,22 @@ bookShelf.addBook("Новая книга");
 // // 	console.clear("fff"));
 
 
+const summaBuy = [432, 5, 1,324,5,35,32,534,5,345,236,32,46,2346,3,32,4, 1,11, 1];
+
+let summa = 0;
+
+// for (let i = 0; i < summaBuy.length; i += 1){
+//   summa += summaBuy[0]
+// }
+
+// console.log (summa);
 
 
+for (let test of summaBuy) {
+  summa += test;
+}
 
-
+console.log(summa)
 
 
 
