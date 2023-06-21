@@ -4,76 +4,16 @@
 // const body = document.querySelector("#body");
 // const output = document.querySelector("#output")
 
+const numbers = [21, 3,  4353, 675, 65, 231];
+let small = numbers[0];
 
-// output.innerHTML = "Получилось!"; 
-
-// const book = {
-// 	title: "Nazvanie knigi",
-// 	autor: "Balaba Sergey",
-// 	genres: ["prikly4eniy", "draki"],
-// 	isPublick: true,
-// 	rating: 8.1,
-
-// };
-
-// const user = {
-//   name: "Jacques Gluke",
-//   tag: "jgluke",
-//   location: {
-//     country: "Jamaica",
-//     city: "Ocho Rios",
-//   },
-//   stats: {
-//     followers: 5603,
-//     views: 4827,
-//     likes: 1308,
-//   },
-// };
-
-
-// // ✅ Логически и синтаксически сгруппированные сущности
-// const bookShelf = {
-//   books: ["The Last Kingdom", "Dream Guardian"],
-//   // Это метод объекта
-//   getBooks() {
-//     console.log("Этот метод будет возвращать все книги - свойство books");
-//   },
-//   // Это метод объекта
-//   addBook(bookName) {
-//     console.log("Этот метод будет добавлять новую книгу в свойство books");
-//   },
-// };
-
-// // Вызовы методов
-// bookShelf.getBooks();
-// bookShelf.addBook("Новая книга");
-
-
-// btnEl.addEventListener("click", () =>
-// 	{text.height = "200px"}
-
-// )
-
-// // btnEl1.addEventListener("click", () =>
-// // 	console.clear("fff"));
-
-
-const summaBuy = [432, 5, 1,324,5,35,32,534,5,345,236,32,46,2346,3,32,4, 1,11, 1];
-
-let summa = 0;
-
-// for (let i = 0; i < summaBuy.length; i += 1){
-//   summa += summaBuy[0]
-// }
-
-// console.log (summa);
-
-
-for (let test of summaBuy) {
-  summa += test;
+for (let number of numbers) {
+  if (number < small) {
+    small = number;
+  }
 }
 
-console.log(summa)
+console.log(small)
 
 
 
@@ -99,50 +39,56 @@ console.log(summa)
 
 
 
-// // btnEl.style.textTransform = "uppercase"
-
-
-
-// btnEl1.addEventListener("click", () =>
-// 	btnEl.style.textTransform = "lowercase",
-// 	btnEl.style.color = "red")
-
-
-// 	btnEl.addEventListener("click", () =>
-// 	btnEl.style.textTransform = "uppercase",
-// 	btnEl.style.color = "green")
-
-// body.addEventListener("click", () =>
-// btnEl.style.color = "red")
 
 
 
 
 
+// const logins = ['Dimon', 'Serega', 'Andrey', 'Pipiay'];
+// const fiendUsers = 'Andddrey';
+// let mess = `Пользователь ${fiendUsers} не найден`;
+
+
+// const test = logins.includes(fiendUsers) ? `Пользователь ${fiendUsers} найден` : mess;
+
+// alert(test)
+
+// console.log(mess)
 
 
 
 
-// const nonOk = "Недостаточно средств";
-// const okey = "Операция успешная";
-// const bal = "Нужно ввести что-то больше 0";
+// const trtr = logins.includes(fiendUsers);
 
-
-// const test = function withdraw(amount, balance) {
-// 	if (amount === 0) {
-// 		console.log(bal);
-// 		return;
-// 	}
-	
-// 	if (amount > balance) {
-// 		console.log(nonOk);
-// 		return;
-// 	}
-
-// 	console.log("okey");
-	
+// if (trtr === true) {
+//   mess = `Пользователь ${fiendUsers} найден`;
+  
 // }
 
-// test(1330, 103);
 
 
+
+// for (let i = 0; i < logins.length; i+=1) {
+  //   const fiend = logins[i];
+  //   if (fiend === fiendUsers) {
+    //     mess = `${fiendUsers} найден! Добро пожаловать!`;
+    
+    //   }
+    
+    // }
+    
+    
+    // console.log(mess);
+    
+    
+    // for (const login of logins) {
+    //   if (login === fiendUsers) {
+    //     mess = `Пользователь ${fiendUsers} найден`
+    //   }
+    // }
+    
+    
+    
+    
+    
+    
