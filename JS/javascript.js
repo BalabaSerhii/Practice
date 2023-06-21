@@ -4,90 +4,49 @@
 // const body = document.querySelector("#body");
 // const output = document.querySelector("#output")
 
-const numbers = [21, 3,  4353, 675, 65, 231];
-let small = numbers[0];
+///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+// Соеденить+добавить "," и отрезать вконце её.
 
-for (let number of numbers) {
-  if (number < small) {
-    small = number;
-  }
-}
+// const names = ["Marina", "Sergey", "Kira"];
+// let namesAll = "";
+// for (const name of names) {
+//   namesAll += name + ",";
+// }
+// namesAll = namesAll.slice(0, namesAll.length - 1)
+// console.log(namesAll);
 
-console.log(small)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+// Соеденить+добавить "," и отрезать вконце её.
+// const names = ["Marina", "Sergey", "Kira"];
+// const soedenit = names.join(', ');
+// console.log("~ ~ soedenit:", soedenit)
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+// Поиск пользователя. Есть или нету в базе
 
 // const logins = ['Dimon', 'Serega', 'Andrey', 'Pipiay'];
-// const fiendUsers = 'Andddrey';
+// const fiendUsers = 'Andrey';
 // let mess = `Пользователь ${fiendUsers} не найден`;
-
-
 // const test = logins.includes(fiendUsers) ? `Пользователь ${fiendUsers} найден` : mess;
+// console.log(test)
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+// Заменить регистр букв на противоположный
+const string = 'JavaScript';
+const 
 
-// alert(test)
-
-// console.log(mess)
-
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
 
 
 
-// const trtr = logins.includes(fiendUsers);
 
-// if (trtr === true) {
-//   mess = `Пользователь ${fiendUsers} найден`;
+
+
+    
   
-// }
-
-
-
-
-// for (let i = 0; i < logins.length; i+=1) {
-  //   const fiend = logins[i];
-  //   if (fiend === fiendUsers) {
-    //     mess = `${fiendUsers} найден! Добро пожаловать!`;
-    
-    //   }
-    
-    // }
-    
-    
-    // console.log(mess);
-    
-    
-    // for (const login of logins) {
-    //   if (login === fiendUsers) {
-    //     mess = `Пользователь ${fiendUsers} найден`
-    //   }
-    // }
-    
-    
     
     
     
