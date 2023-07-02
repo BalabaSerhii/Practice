@@ -3,7 +3,7 @@ body {
  font-family: sans-serif;
  line-height: 1.5;
  color: red;
- background-color: #f5f5f5;
+ background-color: #000000;
  }
 
 .btn {
@@ -14,8 +14,8 @@ body {
 }
 
 :hover.btn {
-  color: red;
-  background-color: aqua;
+  color: rgb(134, 44, 44);
+  background-color: rgb(232, 233, 233);
 }
 
 input {

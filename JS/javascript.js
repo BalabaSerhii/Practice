@@ -55,10 +55,10 @@
 // let inverted = '';
 
 // for (const stringAll of stringNew) {
-	// 	const test = stringAll === stringAll.toLowerCase();
-	// 	inverted += test ? stringAll.toUpperCase() : stringAll.toLowerCase();
-	// }
-	// console.log(inverted)
+// 		const test = stringAll === stringAll.toLowerCase();
+// 		inverted += test ? stringAll.toUpperCase() : stringAll.toLowerCase();
+// 	}
+// 	console.log(inverted)
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
@@ -115,8 +115,109 @@
 		// console.table(cards);
 		/////////////////////////////////////////////////////////////////////////////////
 		/////////////////////////////////////////////////////////////////////////////////
+		//Функция которая считает сумму покупок в массиве
+		// const aff = function (items) {
+			// 	let total = 0;
+			// 	for (const item of items) {
+				// 		total += item
+				// 	}
+				// 		return total
+				// 	}
+				
+				// console.log(aff([1, 10, 3]));
+				// console.log(aff([13, 105, 323]));
+		/////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////
+				// Написать функию для перебора и логирования массива
+				// const logItems = function (items) {
+					// 	for (const item of items) {
+						// 		console.log(item);
+						// 	}
+						// }
+						// logItems(['Mango', 'Kivi', 'Poly']);
+						// logItems([1, 2, 3, 4, 5, 6]);
+						// logItems(['клавиатура', 'мышка', 'часы']);
+		/////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////
+		//Первый способ напиши функцию findLogin(allLogin, login) для поиска логина
+		// -Если логина нет, выведи сообщение "Пользователь [логин] не найден"
+		// -Если нашли логин, вывести сообщение "Пользователь [логин] найден"
+		// const logins = ['Dimon', 'Andrey', 'Sergey', 'Anonimys'];
 		
+		// const findLogin = function (allLogin, findToLogin) {
+			// 		for (const login of allLogin) {
+				
+	// 		if (login === findToLogin) {
+		// 		return `Пользователь ${findToLogin} найден`;
+		// 	}
+		// }
+		// return `Пользователь ${findToLogin} не найден`
+		// }
 		
-    
-    
-    
+		// console.log(findLogin(logins, 'Dimon'))
+		// console.log(findLogin(logins, 'fdfsf'))
+		// console.log(findLogin(logins, 'Sergey'))
+		/////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////
+		//Второй способ
+		// const logins = ['Dimon', 'Andrey', 'Sergey', 'Anonimys'];
+		
+		// const findLogin = function (allLogin, fiendUsers) {
+		// 	const message = allLogin.includes(fiendUsers)
+		// 	? `Пользователь ${fiendUsers} найден`
+		// 	: `Пользователь ${fiendUsers} не найден`
+		// 	return message;
+		// }
+		
+		// console.log(findLogin(logins, 'Dimon'))
+		// console.log(findLogin(logins, 'fdfsf'))
+		// console.log(findLogin(logins, 'Sergey'))
+		/////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////
+		//3й способ
+		// const logins = ['Dimon', 'Andrey', 'Sergey', 'Anonimys'];
+		
+		// const findLogin = function (allLogin, fiendUsers) {
+			// 	return allLogin.includes(fiendUsers)
+			// 	? `Пользователь ${fiendUsers} найден`
+			// 	: `Пользователь ${fiendUsers} не найден`
+			// }
+			// console.log(findLogin(logins, 'Dimon'))
+			// console.log(findLogin(logins, 'fdfsf'))
+			// console.log(findLogin(logins, 'Sergey'))
+		/////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////
+	//Найти самое мальенькое цисло в массиве при помощи функции
+// const numbers = [43, 53, 123, 654, -44, 3213, 6546, 567, 2, -3];
+// const allNumber = function (num) {
+// 	let smallNumber = num[0]
+// 	for (const number of num) {
+// 		if (number < smallNumber) {
+// 			smallNumber = number;
+// 		}
+// 	}
+// 	return smallNumber
+// }
+// console.log(allNumber(numbers))
+/////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////
+	// Заменить регистр букв на противоположный при помощи функции.
+// 	const string = 'JavaScript';
+// 	const stringNew = string.split('');
+// let inverted = '';
+
+// for (const stringAll of stringNew) {
+// 		const test = stringAll === stringAll.toLowerCase();
+// 		inverted += test ? stringAll.toUpperCase() : stringAll.toLowerCase();
+// 	}
+// 	console.log(inverted)
+
+
+const chendgeString = function (string1) {
+	const letters = string1.split('');
+	for (const letter of letters) {
+		
+	}
+	 
+	
+}
