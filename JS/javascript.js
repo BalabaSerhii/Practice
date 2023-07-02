@@ -202,22 +202,81 @@
 /////////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////////
 	// Заменить регистр букв на противоположный при помощи функции.
-// 	const string = 'JavaScript';
-// 	const stringNew = string.split('');
-// let inverted = '';
+// const toChangeRegistr = function (tytstroka) {
+// 	const inSplit = tytstroka.split('');
+// 	let newString = '';
 
-// for (const stringAll of stringNew) {
-// 		const test = stringAll === stringAll.toLowerCase();
-// 		inverted += test ? stringAll.toUpperCase() : stringAll.toLowerCase();
+// 	for (const letter of inSplit) {
+// 		const test = letter === letter.toLowerCase();
+// 		newString += test ? letter.toUpperCase() : letter.toLowerCase();
 // 	}
-// 	console.log(inverted)
+// 	return newString
+// }
+// console.log(toChangeRegistr('DFFFFjkjjkjkkDDfsdDSg hjgk jhk'))
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+//написать функцию которая получает строку и возвращает URL-slug
+// строка состоит только из букв и пробелов
+// const slugify = function (string) {
+// 	return string.toLowerCase().split(' ').join('-');
+// 	// const slug = string.toLowerCase().split(' ').join('-')
+// 	// return slug
+// }
+// console.log(slugify('Top 10 benefists of React Framework'));
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+// Напишите функцию add для сложения произвольного количества аргументов (чисел)
+// -Операция ... (rest)
+// const add = function (a, s, f, ...args) {
+	// 	// console.log(args)
+	// 	let tottal = 0;
+	// 	for (const arg of args) {
+		// 		tottal += arg;
+		// 	}
+		// 	return tottal;
+		// }
+		// console.log(add(10, 2, 3, 3, 5));
+		/////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////
+		//пойми что в этом коде
+		// const filterNumbers = function (a, ...args) {
+			// 	const intersection = [];
+			// 	for (const arg of a) {
+				// 		for (const agr1 of args) {
+					// 			if (arg === agr1) {
+						// 		intersection.push(arg)
+						// 	}		
+						// 		}
+						// 	}
+						// 	return intersection;
+						// }
+						// console.log(filterNumbers([1,2,1,6], 2, 4, 5, 6))// [2,6]
+						/////////////////////////////////////////////////////////////////////////////////
+						/////////////////////////////////////////////////////////////////////////////////
+// второй вариант верхнего кода
+const filterNumbers = (a, ...args) => a.filter(arg => args.includes(arg));
+
+console.log(filterNumbers([1, 2, 1, 55, 6], 2, 4, 5, 6)); 
 
 
-const chendgeString = function (string1) {
-	const letters = string1.split('');
-	for (const letter of letters) {
-		
-	}
-	 
-	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
