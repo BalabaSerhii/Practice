@@ -240,25 +240,57 @@
 		/////////////////////////////////////////////////////////////////////////////////
 		//пойми что в этом коде
 		// const filterNumbers = function (a, ...args) {
-			// 	const intersection = [];
-			// 	for (const arg of a) {
-				// 		for (const agr1 of args) {
-					// 			if (arg === agr1) {
-						// 		intersection.push(arg)
-						// 	}		
-						// 		}
-						// 	}
-						// 	return intersection;
-						// }
-						// console.log(filterNumbers([1,2,1,6], 2, 4, 5, 6))// [2,6]
-						/////////////////////////////////////////////////////////////////////////////////
-						/////////////////////////////////////////////////////////////////////////////////
-// второй вариант верхнего кода
-const filterNumbers = (a, ...args) => a.filter(arg => args.includes(arg));
+	// 	const intersection = [];
+	// 	for (const arg of a) {
+	// 		for (const agr1 of args) {
+		// 			if (arg === agr1) {
+			// 		intersection.push(arg)
+			// 	}		
+			// 		}
+			// 	}
+			// 	return intersection;
+			// }
+			// console.log(filterNumbers([1,2,1,6], 2, 4, 5, 6))// [2,6]
+	/////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////
+	// второй вариант верхнего кода
+	// const filterNumbers = (a, ...args) => a.filter(arg => args.includes(arg));
+	
+	// console.log(filterNumbers([1, 2, 1, 55, 6], 2, 4, 5, 6)); 
+	///////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	const playList = {
+		name: 'Мой супер плейлист',
+		rating: 5,
+		tracks: ['трек-1', 'трек-2', 'трек-3'],
+		trackCount: 3,
+	};
+	const propertyName = 'tracks';
+	// console.log("playList:", playList.name);
+	// console.log("playList:", playList.rating);
+	// console.log("playList:", playList.tracks);
+console.log(playList);
+playList.hirou = 32;
+console.log(playList);
+	///////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	// const userName = 'Mango';
+	// const email = 'mango@gmail.com';
+	
+	// const signumData = {
+		// 	userName,
+		// 	email,
+		// };
+		// console.log("signumData:", signumData)
+		///////////////////////////////////////////////////////////////////////////////
+		///////////////////////////////////////////////////////////////////////////////
+// const inputName = 'color';
+// const inputValue = 'tomato';
 
-console.log(filterNumbers([1, 2, 1, 55, 6], 2, 4, 5, 6)); 
-
-
+// const colorPikerData = {
+// 	[inputName]: inputValue
+// }
+// console.log("colorPikerData:", colorPikerData)
 
 
 
