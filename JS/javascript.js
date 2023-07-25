@@ -259,19 +259,19 @@
 	// console.log(filterNumbers([1, 2, 1, 55, 6], 2, 4, 5, 6)); 
 	///////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////////////
-	const playList = {
-		name: 'Мой супер плейлист',
-		rating: 5,
-		tracks: ['трек-1', 'трек-2', 'трек-3'],
-		trackCount: 3,
-	};
-	const propertyName = 'tracks';
-	// console.log("playList:", playList.name);
-	// console.log("playList:", playList.rating);
-	// console.log("playList:", playList.tracks);
-console.log(playList);
-playList.hirou = 32;
-console.log(playList);
+// 	const playList = {
+// 		name: 'Мой супер плейлист',
+// 		rating: 5,
+// 		tracks: ['трек-1', 'трек-2', 'трек-3'],
+// 		trackCount: 3,
+// 	};
+// 	const propertyName = 'tracks';
+// 	// console.log("playList:", playList.name);
+// 	// console.log("playList:", playList.rating);
+// 	// console.log("playList:", playList.tracks);
+// console.log(playList);
+// playList.hirou = 32;
+// console.log(playList);
 	///////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////////////
 	// const userName = 'Mango';
@@ -293,22 +293,23 @@ console.log(playList);
 // console.log("colorPikerData:", colorPikerData)
 
 
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+//   const test = message.toLowerCase();
+
+	// result = test.includes("spam" || "sale")
+
+	result = message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale")
+	
+  
+  // Change code above this line
+  return result;
+}
 
 
+// перевести все вводимые символы в нижний регистр
+// проверить входит ли слова спам и сале в введенном предложении.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	console.log(checkForSpam('Get best sale offers now!'))
