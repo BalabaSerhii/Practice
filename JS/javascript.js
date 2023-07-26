@@ -293,23 +293,22 @@
 // console.log("colorPikerData:", colorPikerData)
 
 
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-//   const test = message.toLowerCase();
 
-	// result = test.includes("spam" || "sale")
 
-	result = message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale")
-	
+function includes(array, value) {
   
-  // Change code above this line
-  return result;
+	for (const arr of array) {
+		if (arr === value){
+			return true;
+		}
+		
+	}
+	return false;
+
+
+
+
 }
 
 
-// перевести все вводимые символы в нижний регистр
-// проверить входит ли слова спам и сале в введенном предложении.
-
-
-	console.log(checkForSpam('Get best sale offers now!'))
+console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"))
