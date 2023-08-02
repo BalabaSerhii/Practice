@@ -295,20 +295,19 @@
 
 
 
-function includes(array, value) {
-  
-	for (const arr of array) {
-		if (arr === value){
-			return true;
-		}
-		
-	}
-	return false;
 
 
 
+const students = [
+  { name: "Манго", courses: ["математика", "физика"] },
+  { name: "Поли", courses: ["информатика", "математика"] },
+  { name: "Киви", courses: ["физика", "биология"] },
+];
 
-}
+const allCourses = students.flatMap(student => student.courses);
+// ['математика', 'физика', 'информатика', 'математика', 'физика', 'биология'];
 
-
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"))
+const uniqueCourses = allCourses.filter(
+  (course, index, array) => array.indexOf(course) === index
+  );
+  console.log("~  uniqueCourses:", uniqueCourses.allCourses)
